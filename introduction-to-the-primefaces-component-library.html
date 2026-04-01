@@ -1399,8 +1399,8 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.RequestScoped;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.ManagedBean;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@ManagedBean</span></span>
-<span class="odt-code-line"><span style="color:#000000">@RequestScoped</span></span>
+<span class="odt-code-line">@ManagedBean</span>
+<span class="odt-code-line">@RequestScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">SpinnerController {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -2090,8 +2090,8 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.RequestScoped;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.ManagedBean;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@ManagedBean</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@ManagedBean</span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Date calendar;</span></span>
@@ -2112,7 +2112,7 @@
 
 <p><span style="color: #000000">The four inputs are associated with the fields in lines 14–17.</span></p>
 <p><a id="refheading10505710005176"></a></p>
-<h3 id="5123-the-form">5.12.3. <span style="color: #4f81bd"><span style="color: #000000">The form</span></span></h3>
+<h3 id="5123-the-form">5.12.3. <span style="color: #000000">The form</span></h3>
 <p><span style="color: #000000">The form is as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml </span><span style="font-style:italic;color:#2a00ff">version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27; </span><span style="color:#008080">?&gt;</span></span>
@@ -2165,7 +2165,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000193000001783FC10AF6.png" style="display:inline-block; margin:4px;width:5.33cm;height:4.972cm;" class="odt-zoomable" data-zoom-src="images/1000000000000193000001783FC10AF6.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><a id="refheading10506110005176"></a></p>
-<h3 id="5125-the-slider">5.12.5. <span style="color: #4f81bd"><span style="color: #000000">The slider</span></span></h3>
+<h3 id="5125-the-slider">5.12.5. <span style="color: #000000">The slider</span></h3>
 <p><span style="color: #000000">The &lt;</span><strong><span style="color: #000000">p:slider</span></strong><span style="color: #000000">&gt; tag allows you to enter an integer by dragging a slider along a bar:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000112000000604B8E2DCE.png" style="display:inline-block; margin:4px;width:3.62cm;height:1.268cm;" class="odt-zoomable" data-zoom-src="images/1000000000000112000000604B8E2DCE.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -2189,7 +2189,7 @@
 </ul>
 
 <p><a id="refheading10506310005176"></a></p>
-<h3 id="5126-the-spinner">5.12.6. <span style="color: #4f81bd"><span style="color: #000000">The spinner</span></span></h3>
+<h3 id="5126-the-spinner">5.12.6. <span style="color: #000000">The spinner</span></h3>
 <p><span style="color: #000000">We have already introduced this component:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputText </span><span style="color:#000000">value=</span><span style="font-style:italic;color:#2a00ff">&quot;#{msg[&#x27;spinner.prompt&#x27;]}&quot;</span><span style="color:#008080">/&gt;</span></span>
@@ -2203,7 +2203,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002D60000003027F73319.png" style="display:inline-block; margin:4px;width:9.601cm;height:0.635cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D60000003027F73319.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><a id="refheading10506510005176"></a></p>
-<h3 id="5127-autocomplete">5.12.7. <span style="color: #4f81bd"><span style="color: #000000">Autocomplete</span></span></h3>
+<h3 id="5127-autocomplete">5.12.7. <span style="color: #000000">Autocomplete</span></h3>
 <p><span style="color: #000000">Autocomplete involves typing the first few characters of the input. Suggestions then appear in a dropdown list. You can select one of them. This component is used instead of dropdown lists when the latter contain too much content. Suppose you want to offer a dropdown list of cities in France. That amounts to several thousand cities. If you let the user type the first three characters of the city, you can then offer them a reduced list of cities starting with those characters.</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000007C000000D9E0A479B4.png" style="display:inline-block; margin:4px;width:1.64cm;height:2.87cm;" class="odt-zoomable" data-zoom-src="images/100000000000007C000000D9E0A479B4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -2241,7 +2241,7 @@
 </ul>
 
 <p><a id="refheading10506710005176"></a></p>
-<h3 id="5128-the-pgrowl-tag">5.12.8. <span style="color: #4f81bd"><span style="color: #000000">The &lt;p:growl&gt; tag</span></span></h3>
+<h3 id="5128-the-pgrowl-tag">5.12.8. <span style="color: #000000">The &lt;p:growl&gt; tag</span></h3>
 <p><span style="color: #000000">The &lt;</span><strong><span style="color: #000000">p:growl</span></strong><span style="color: #000000">&gt; tag is a possible replacement for the &lt;</span><strong><span style="color: #000000">p:messages</span></strong><span style="color: #000000">&gt; tag, which displays form error messages.</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-sql">
 <span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:growl </span><span style="color:#000000">id=</span><span style="font-style:italic;color:#2a00ff">&quot;messages&quot; </span><span style="color:#000000">autoUpdate=</span><span style="font-style:italic;color:#2a00ff">&quot;true&quot;</span><span style="color:#008080">/&gt;</span></span>
@@ -2279,7 +2279,7 @@
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">app.</span><span style="color:#2a00ff">title=intro-08</span></span>
 <span class="odt-code-line"><span style="color:#000000">app.</span><span style="color:#2a00ff">title2=DataTable - 1</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">submit=Validate</span></span>
+<span class="odt-code-line">submit=Validate</span>
 <span class="odt-code-line"><span style="color:#000000">people.headers.</span><span style="color:#2a00ff">id=Id</span></span>
 <span class="odt-code-line"><span style="color:#000000">people.headers.</span><span style="color:#2a00ff">last_name=Last Name</span></span>
 <span class="odt-code-line"><span style="color:#000000">people.headers.</span><span style="color:#2a00ff">first_name=First Name</span></span>
@@ -2338,8 +2338,8 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.ManagedBean;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.SessionScoped;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@ManagedBean</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@ManagedBean</span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable{</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -2376,7 +2376,7 @@
 </ul>
 
 <p><a id="refheading10507710005176"></a></p>
-<h3 id="5134-the-form">5.13.4. <span style="color: #4f81bd"><span style="color: #000000">The form</span></span></h3>
+<h3 id="5134-the-form">5.13.4. <span style="color: #000000">The form</span></h3>
 <p><span style="color: #000000">The form is as follows [index.xhtml]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml </span><span style="font-style:italic;color:#2a00ff">version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27; </span><span style="color:#008080">?&gt;</span></span>
@@ -2453,8 +2453,8 @@
 <p>The method for removing a person is as follows:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">...</span>
-<span class="odt-code-line"><span style="color:#000000">@ManagedBean</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@ManagedBean</span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable{</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -2523,8 +2523,8 @@
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@ManagedBean</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@ManagedBean</span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -2606,12 +2606,12 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">super</span><span style="color:#000000">(people);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Object getRowKey(Person person) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">person.getId();</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person getRowData(String rowKey) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// list of people</span></span>
 <span class="odt-code-line">    List&lt;Person&gt; people = (List&lt;Person&gt;) getWrappedData();</span>
@@ -2888,8 +2888,8 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.ManagedBean;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.SessionScoped;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@ManagedBean</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@ManagedBean</span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -2955,7 +2955,7 @@
 </ul>
 
 <p><a id="refheading10508910005176"></a></p>
-<h2 id="519-conclusion">5.19. <span style="color: #4f81bd"><span style="color: #000000">Conclusion</span></span></h2>
+<h2 id="519-conclusion">5.19. <span style="color: #000000">Conclusion</span></h2>
 <p><span style="color: #000000">We now know enough to port our sample application to PrimeFaces. We have only covered about fifteen components, whereas the library contains over 100. Readers are encouraged to search for any missing components directly on the PrimeFaces website.</span></p>
 <p><a id="refheading10509110005176"></a></p>
 <h2 id="520-testing-with-eclipse">5.20. <span style="color: #4f81bd">Testing with Eclipse</span></h2>

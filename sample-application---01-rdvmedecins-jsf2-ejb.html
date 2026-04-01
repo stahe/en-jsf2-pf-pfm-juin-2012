@@ -1178,9 +1178,9 @@
 
 
 
-<p><a id="refheading73496604163464"></a>
+<p><a id="refheading1882601168461456-copie-1"></a>
 <a id="refheading1433241675182081-copie-1"></a>
-<a id="refheading1882601168461456-copie-1"></a></p>
+<a id="refheading73496604163464"></a></p>
 <h1 id="3-sample-application-01-rdvmedecins-jsf2-ejb">3. <span style="color: #365f91">Sample Application – 01: rdvmedecins-jsf2-ejb</span></h1>
 <p>The following text refers to the following documents:<a id="references-2"></a> </p>
 <ul>
@@ -1226,8 +1226,8 @@
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005320000011FBD2CB0B7.png" style="display:inline-block; margin:4px;width:17.595cm;height:3.798cm;" class="odt-zoomable" data-zoom-src="images/10000000000005320000011FBD2CB0B7.png" /></td></tr></table>
 
-<p><a id="refheading73502604163464"></a>
-<a id="vuesappliweb"></a></p>
+<p><a id="vuesappliweb"></a>
+<a id="refheading73502604163464"></a></p>
 <h2 id="32-how-the-application-works">3.2. <span style="color: #4f81bd">How the application works</span></h2>
 <p>We will call the application [RdvMedecins]. Below are screenshots showing how it works.</p>
 <p>The application’s home page is as follows:</p>
@@ -1343,8 +1343,8 @@
 </code></pre></div>
 <p>If a row in the [RV] table has the value (DAY1, SLOT_ID1) for the columns (DAY, SLOT_ID), this value cannot appear anywhere else. Otherwise, this would mean that two appointments were booked at the same time for the same doctor. From a Java programming perspective, the database’s JDBC driver throws an <em>SQLException</em> when this occurs.</p>
 <p>The row <em>with ID</em> equal to 3 (see [1] above) means that an appointment was booked for slot #20 and client #4 on 08/23/2006. The [SLOTS] table tells us that slot no. 20 corresponds to the time slot 4:20 PM – 4:40 PM and belongs to doctor no. 1 (Ms. Marie PELISSIER). The [CLIENTS] table tells us that client no. 4 is Ms. Brigitte BISTROU.</p>
-<p><a id="creation-bd"></a>
-<a id="refheading73516604163464"></a></p>
+<p><a id="refheading73516604163464"></a>
+<a id="creation-bd"></a></p>
 <h3 id="335-generating-the-database">3.3.5. <span style="color: #4f81bd">Generating the database</span></h3>
 <p>To create the tables and populate them, you can use the script [dbrdvmedecins2.sql], which can be found on the examples website. Using [WampServer] (see section<a href="#wampserver"><u><span style="color: #0563c1"> 1.3.3</span></u></a>), proceed as follows:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000038B000001D61A612CA3.png" style="display:inline-block; margin:4px;width:12cm;height:6.218cm;" class="odt-zoomable" data-zoom-src="images/100000000000038B000001D61A612CA3.png" /></td></tr></table>
@@ -1391,8 +1391,8 @@
 </ul>
 
 <p>We will not return to this database again. However, the reader is invited to follow its evolution throughout the programs, especially when things don’t work.</p>
-<p><a id="refheading73522604163464"></a>
-<a id="generationautomatique"></a></p>
+<p><a id="generationautomatique"></a>
+<a id="refheading73522604163464"></a></p>
 <h2 id="34-the-dao-and-jpa-layers">3.4. <span style="color: #4f81bd">The [DAO] and [JPA] layers</span></h2>
 <p>Let’s return to the architecture we need to build:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F000000113130952B3.png" style="display:inline-block; margin:4px;width:16.722cm;height:3.637cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F000000113130952B3.png" /></td></tr></table>
@@ -1411,8 +1411,8 @@
 
 <p>We will now build the Maven project for the [DAO] and [JPA] layers.</p>
 <p><strong>Note</strong>: Understanding the [business], [DAO], and [JPA] layers requires knowledge of Java EE. For this, you can refer to [<strong>ref7</strong>] (see paragraph<a href="#references-2"><u><span style="color: #0563c1"> 3</span></u></a>).</p>
-<p><a id="refheading74289604163464"></a>
-<a id="maven-ejb-dao"></a></p>
+<p><a id="maven-ejb-dao"></a>
+<a id="refheading74289604163464"></a></p>
 <h3 id="341-the-netbeans-project">3.4.1. <span style="color: #4f81bd">The NetBeans project</span></h3>
 <p>Here is what to do:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D20000014E497A4EA8.png" style="display:inline-block; margin:4px;width:16.325cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D20000014E497A4EA8.png" /></td></tr></table>
@@ -1440,8 +1440,8 @@
 
 <p>With NetBeans, it is possible to automatically generate the [JPA] layer and the [EJB] layer that controls access to the generated JPA entities. It is useful to be familiar with these automatic generation methods because the generated code provides valuable insights into how to write JPA entities or the EJB code that uses them.</p>
 <p>We will now describe some of these automatic generation tools. To understand the generated code, you need a solid understanding of JPA entities [<strong>ref8</strong>] and EJBs [<strong>ref7</strong>] (see Section<a href="#references-2"><u><span style="color: #0563c1"> 3</span></u></a>).</p>
-<p><a id="connexionnetbeans"></a>
-<a id="refheading74293604163464"></a></p>
+<p><a id="refheading74293604163464"></a>
+<a id="connexionnetbeans"></a></p>
 <h4 id="3421-creating-a-netbeans-connection-to-the-database">3.4.2.1. <span style="color: #4f81bd">Creating a NetBeans connection to the database</span></h4>
 <ul>
   <li>Start the MySQL 5 DBMS so that the database is available,
@@ -1713,12 +1713,12 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">rdvmedecins.jpa;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line">...</span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;medecins&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Doctor </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line">  </span>
-<span class="odt-code-line"><span style="color:#000000">@Id</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span></span>
+<span class="odt-code-line">@Id</span>
+<span class="odt-code-line">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long id;</span></span>
 <span class="odt-code-line">  </span>
@@ -1743,17 +1743,17 @@
 <span class="odt-code-line">  // getters and setters</span>
 <span class="odt-code-line">....</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">  ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line">  ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
@@ -1797,11 +1797,11 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.persistence.*;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.validation.constraints.NotNull;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;slots&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Slot </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Id</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span></span>
+<span class="odt-code-line">  @Id</span>
+<span class="odt-code-line">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long id;</span></span>
 <span class="odt-code-line"></span>
@@ -1832,17 +1832,17 @@
 <span class="odt-code-line">// getters and setters</span>
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
@@ -1898,11 +1898,11 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">rdvmedecins.jpa;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line">...</span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;clients&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Client </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Id</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span></span>
+<span class="odt-code-line">  @Id</span>
+<span class="odt-code-line">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long id;</span></span>
 <span class="odt-code-line"></span>
@@ -1926,17 +1926,17 @@
 <span class="odt-code-line">// getters and setters</span>
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
@@ -1954,16 +1954,16 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">rdvmedecins.jpa;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line">...</span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;rv&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Rv </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Id</span></span>
+<span class="odt-code-line">  @Id</span>
 <span class="odt-code-line"><span style="color:#000000">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long id;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;DAY&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Temporal(TemporalType.DATE)</span></span>
+<span class="odt-code-line">  @Temporal(TemporalType.DATE)</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Date day;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  @JoinColumn(name = </span><span style="color:#2a00ff">&quot;SLOT_ID&quot;</span><span style="color:#000000">, referencedColumnName = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
@@ -1980,17 +1980,17 @@
 <span class="odt-code-line">  // getters and setters</span>
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
@@ -2031,34 +2031,34 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.validation.constraints.NotNull;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.validation.constraints.Size;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@MappedSuperclass</span></span>
+<span class="odt-code-line">@MappedSuperclass</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Person </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private static final long </span><span style="color:#000000">serialVersionUID = 1L;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Id</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span></span>
+<span class="odt-code-line">  @Id</span>
+<span class="odt-code-line">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long id;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Size(min = 1, max = 5)</span></span>
+<span class="odt-code-line">  @Size(min = 1, max = 5)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;TITLE&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String title;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Size(min = 1, max = 30)</span></span>
+<span class="odt-code-line">  @NotNull</span>
+<span class="odt-code-line">  @Size(min = 1, max = 30)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;NAME&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String name;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
+<span class="odt-code-line">  @NotNull</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;VERSION&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Version</span></span>
+<span class="odt-code-line">  @Version</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#000000">version;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Size(min = 1, max = 30)</span></span>
+<span class="odt-code-line">  @NotNull</span>
+<span class="odt-code-line">  @Size(min = 1, max = 30)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;FIRST_NAME&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String firstName;</span></span>
 <span class="odt-code-line">// constructors</span>
@@ -2067,7 +2067,7 @@
 <span class="odt-code-line">// getters and setters</span>
 <span class="odt-code-line">  ...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.format(</span><span style="color:#2a00ff">&quot;[%s,%s,%s,%s,%s]&quot;</span><span style="color:#000000">, id, version, title, firstName, lastName);</span></span>
 <span class="odt-code-line">  }</span>
@@ -2087,7 +2087,7 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">java.io.Serializable;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.persistence.*;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;clients&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Client </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">Person </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private static final long </span><span style="color:#000000">serialVersionUID = 1L;</span></span>
@@ -2095,17 +2095,17 @@
 <span class="odt-code-line">// constructors</span>
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line">  ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.format(</span><span style="color:#2a00ff">&quot;Client[%s,%s,%s,%s]&quot;</span><span style="color:#000000">, getId(), getTitle(), getFirstName(), getLastName());</span></span>
 <span class="odt-code-line">  }</span>
@@ -2129,7 +2129,7 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">java.io.Serializable;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.persistence.*;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;doctors&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Doctor </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">Person </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private static final long </span><span style="color:#000000">serialVersionUID = 1L;</span></span>
@@ -2137,17 +2137,17 @@
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// constructors</span></span>
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.format(</span><span style="color:#2a00ff">&quot;Doctor[%s,%s,%s,%s]&quot;</span><span style="color:#000000">, getId(), getTitle(), getFirstName(), getLastName());</span></span>
 <span class="odt-code-line">  }</span>
@@ -2164,41 +2164,41 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.persistence.*;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.validation.constraints.NotNull;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;slots&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Slot </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private static final long </span><span style="color:#000000">serialVersionUID = 1L;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Id</span></span>
+<span class="odt-code-line">  @Id</span>
 <span class="odt-code-line"><span style="color:#000000">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long id;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
+<span class="odt-code-line">  @NotNull</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;START_DATE&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#000000">mstart;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
+<span class="odt-code-line">  @NotNull</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ENDTIME&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#000000">end;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
+<span class="odt-code-line">  @NotNull</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;START_TIME&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#000000">hstart;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
+<span class="odt-code-line">  @NotNull</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;MFIN&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#000000">mfin;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
+<span class="odt-code-line">  @NotNull</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;VERSION&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Version</span></span>
+<span class="odt-code-line">  @Version</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#000000">version;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @JoinColumn(name = </span><span style="color:#2a00ff">&quot;DOCTOR_ID&quot;</span><span style="color:#000000">, referencedColumnName = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
@@ -2211,12 +2211,12 @@
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// getters and setters</span></span>
 <span class="odt-code-line">  ...</span>
 <span class="odt-code-line"> </span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// </span><span style="font-weight:bold;color:#7f9fbf">TODO</span><span style="color:#3f7f5f">: Warning - this method won&#x27;t work if the id fields are not set</span></span>
 <span class="odt-code-line">    ...</span>
@@ -2243,21 +2243,21 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.persistence.*;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.validation.constraints.NotNull;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Entity</span></span>
+<span class="odt-code-line">@Entity</span>
 <span class="odt-code-line"><span style="color:#000000">@Table(name = </span><span style="color:#2a00ff">&quot;rv&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Rv </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private static final long </span><span style="color:#000000">serialVersionUID = 1L;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Id</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span></span>
+<span class="odt-code-line">  @Id</span>
+<span class="odt-code-line">  @GeneratedValue(strategy = GenerationType.IDENTITY)</span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long id;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @Basic(optional = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @NotNull</span></span>
+<span class="odt-code-line">  @NotNull</span>
 <span class="odt-code-line"><span style="color:#000000">  @Column(name = </span><span style="color:#2a00ff">&quot;DAY&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Temporal(TemporalType.DATE)</span></span>
+<span class="odt-code-line">  @Temporal(TemporalType.DATE)</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Date day;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  @JoinColumn(name = </span><span style="color:#2a00ff">&quot;SLOT_ID&quot;</span><span style="color:#000000">, referencedColumnName = </span><span style="color:#2a00ff">&quot;ID&quot;</span><span style="color:#000000">)</span></span>
@@ -2274,17 +2274,17 @@
 <span class="odt-code-line">  // getters and setters</span>
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">hashCode() {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public boolean </span><span style="color:#000000">equals(Object object) {</span></span>
 <span class="odt-code-line">    ...</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.format(</span><span style="color:#2a00ff">&quot;Appointment[%s, %s, %s]&quot;</span><span style="color:#000000">, id, time slot, client);</span></span>
 <span class="odt-code-line">  }</span>
@@ -2441,7 +2441,7 @@
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.ejb.Local;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Local</span></span>
+<span class="odt-code-line">@Local</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public interface </span><span style="color:#000000">IDaoLocal </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">IDao{</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line">}</span>
@@ -2453,7 +2453,7 @@
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.ejb.Remote;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Remote</span></span>
+<span class="odt-code-line">@Remote</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public interface </span><span style="color:#000000">IDaoRemote </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">IDao{</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line">}</span>
@@ -2466,7 +2466,7 @@
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">@Singleton (mappedName=</span><span style="color:#2a00ff">&quot;rdvmedecins.dao&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">@TransactionAttribute(TransactionAttributeType.REQUIRED)</span></span>
+<span class="odt-code-line">@TransactionAttribute(TransactionAttributeType.REQUIRED)</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">DaoJpa </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">IDaoLocal, IDaoRemote, Serializable {</span></span>
 </code></pre></div>
 
@@ -2498,10 +2498,10 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">rdvmedecins.jpa.Rv;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">@Singleton (mappedName=</span><span style="color:#2a00ff">&quot;rdvmedecins.dao&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">@TransactionAttribute(TransactionAttributeType.REQUIRED)</span></span>
+<span class="odt-code-line">@TransactionAttribute(TransactionAttributeType.REQUIRED)</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">DaoJpa </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">IDaoLocal, IDaoRemote, Serializable {</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @PersistenceContext</span></span>
+<span class="odt-code-line">  @PersistenceContext</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">EntityManager em;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// list of clients</span></span>
@@ -2643,8 +2643,8 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F1000002083DD109B4.png" style="display:inline-block; margin:4px;width:13.349cm;height:6.879cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F1000002083DD109B4.png" /></td></tr></table>
 
 <p>The folder where the MySQL JDBC driver should be placed is &lt;Domains folder&gt;[1]/domain1/lib/ext [2]. This driver is available at the URL [http://www.mysql.fr/downloads/connector/j/]. Once installed, you must restart the GlassFish server for it to recognize this new library.</p>
-<p><a id="refheading73534604163464"></a>
-<a id="deploiement-ejb1"></a></p>
+<p><a id="deploiement-ejb1"></a>
+<a id="refheading73534604163464"></a></p>
 <h3 id="346-deployment-of-the-dao-layer-ejb">3.4.6. <span style="color: #4f81bd">Deployment of the [DAO] layer EJB</span></h3>
 <p>Let’s return to the architecture we’ve built so far:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004EB0000011C09BABED1.png" style="display:inline-block; margin:4px;width:16.656cm;height:3.757cm;" class="odt-zoomable" data-zoom-src="images/10000000000004EB0000011C09BABED1.png" /></td></tr></table>
@@ -2959,7 +2959,7 @@
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// today&#x27;s date</span></span>
 <span class="odt-code-line"><span style="color:#000000">  currentDate = </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">Date();</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @BeforeClass</span></span>
+<span class="odt-code-line">  @BeforeClass</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public static void </span><span style="color:#000000">init() </span><span style="font-weight:bold;color:#7f0055">throws </span><span style="color:#000000">NamingException {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// Initialize the JNDI environment</span></span>
 <span class="odt-code-line"><span style="color:#000000">    InitialContext initialContext = </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">InitialContext();</span></span>
@@ -2967,7 +2967,7 @@
 <span class="odt-code-line"><span style="color:#000000">    dao = (IDaoRemote) initialContext.lookup(</span><span style="color:#2a00ff">&quot;rdvmedecins.dao&quot;</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Test</span></span>
+<span class="odt-code-line">  @Test</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">test1() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// display clients</span></span>
 <span class="odt-code-line">    List&lt;Client&gt; clients = dao.getAllClients();</span>
@@ -3452,7 +3452,7 @@
 <span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// toString</span></span>
-<span class="odt-code-line"><span style="color:#000000">    @Override</span></span>
+<span class="odt-code-line">    @Override</span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.format(</span><span style="color:#2a00ff">&quot;[%s %s]&quot;</span><span style="color:#000000">, creneau, rv);</span></span>
 <span class="odt-code-line">    }</span>
@@ -3476,7 +3476,7 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">rdvmedecins.metier.service;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.ejb.Local;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Local</span></span>
+<span class="odt-code-line">@Local</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public interface </span><span style="color:#000000">ILocalBusiness </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">IBusiness{</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line">}</span>
@@ -3484,7 +3484,7 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">rdvmedecins.business.service;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.ejb.Remote;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Remote</span></span>
+<span class="odt-code-line">@Remote</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public interface </span><span style="color:#000000">IMetierRemote </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">IMetier{</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line">}</span>
@@ -3513,68 +3513,68 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">rdvmedecins.business.entities.DoctorDailySchedule;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">rdvmedecins.business.entities.DoctorDailySlot;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Singleton</span></span>
-<span class="odt-code-line"><span style="color:#000000">@TransactionAttribute(TransactionAttributeType.REQUIRED)</span></span>
+<span class="odt-code-line">@Singleton</span>
+<span class="odt-code-line">@TransactionAttribute(TransactionAttributeType.REQUIRED)</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Business </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">ILocalBusiness, IRemoteBusiness, Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// DAO layer</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @EJB</span></span>
+<span class="odt-code-line">  @EJB</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">IDaoLocal dao;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Metier() {</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">List&lt;Client&gt; getAllClients() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getAllClients();</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">List&lt;Doctor&gt; getAllDoctors() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getAllDoctors();</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">List&lt;Slot&gt; getAllSlots(Doctor doctor) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getAllSlots(doctor);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">List&lt;Appointment&gt; getDoctorAppointment(Doctor doctor, Date date) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getRvMedecinJour(doctor, day);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Client getClientById(Long id) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getClientById(id);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Doctor getDoctorById(Long id) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getDoctorById(id);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Rv getRvById(Long id) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getRvById(id);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Slot getSlotById(Long id) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.getTimeSlotById(id);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Rv addAppointment(Date date, Appointment appointment, Client client) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">dao.addRv(day, slot, client);</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">deleteAppointment(Appointment appointment) {</span></span>
 <span class="odt-code-line">    dao.deleteAppointment(rv);</span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @Override</span></span>
+<span class="odt-code-line">  @Override</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">DoctorDailySchedule getDoctorDailySchedule(Doctor doctor, Date date) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// list of the doctor&#x27;s available time slots</span></span>
 <span class="odt-code-line">    List&lt;TimeSlot&gt; timeSlots = dao.getAllTimeSlots(doctor);</span>
@@ -4494,11 +4494,11 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">rdvmedecins.business.service.IMetierLocal;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">@Named(value = </span><span style="color:#2a00ff">&quot;application&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">@ApplicationScoped</span></span>
+<span class="odt-code-line">@ApplicationScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Application implements Serializable{</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// business layer</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @EJB</span></span>
+<span class="odt-code-line">  @EJB</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">ILocalBusinessLogic businessLogic;</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// cache</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">List&lt;Doctor&gt; doctors;</span></span>
@@ -4512,7 +4512,7 @@
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Application() {</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @PostConstruct</span></span>
+<span class="odt-code-line">  @PostConstruct</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">init() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// cache doctors and clients</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">try </span><span style="color:#000000">{</span></span>
@@ -4615,14 +4615,14 @@
 <span class="odt-code-line">...</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">@Named(value = </span><span style="color:#2a00ff">&quot;form&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Form() {</span></span>
 <span class="odt-code-line">  }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// Application bean</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Inject</span></span>
+<span class="odt-code-line">  @Inject</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Application application;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -4642,7 +4642,7 @@
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">DoctorSlotSlot selectedSlot;</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">List&lt;Error&gt; errors;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  @PostConstruct</span></span>
+<span class="odt-code-line">  @PostConstruct</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private void </span><span style="color:#000000">init() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// Did initialization succeed?</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">if </span><span style="color:#000000">(application.getError()) {</span></span>
@@ -4755,11 +4755,11 @@
 <p><span style="color: #000000">This page is powered by the following model:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="color:#000000">@Named(value = </span><span style="color:#2a00ff">&quot;form&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// Application bean</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Inject</span></span>
+<span class="odt-code-line">  @Inject</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Application application;</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Long doctorId;</span></span>
@@ -4797,7 +4797,7 @@
 <p><span style="color: #000000">The </span><strong><span style="color: #000000">getAgenda</span></strong><span style="color: #000000"> method is as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// Application bean</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Inject</span></span>
+<span class="odt-code-line">  @Inject</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Application application;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -4860,7 +4860,7 @@
 </ul>
 
 <p><a id="refheading7739630114625"></a></p>
-<h4 id="3662-display-a-doctors-schedule">3.6.6.2. <span style="color: #4f81bd"><span style="color: #000000">Display a doctor&#x27;s schedule</span></span></h4>
+<h4 id="3662-display-a-doctors-schedule">3.6.6.2. <span style="color: #000000">Display a doctor&#x27;s schedule</span></h4>
 <p><span style="color: #000000">The page [form2.xhtml] corresponds to the following view:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000244000001AB9C60A78F.png" style="display:inline-block; margin:4px;width:8.43cm;height:6.205cm;" class="odt-zoomable" data-zoom-src="images/1000000000000244000001AB9C60A78F.png" /></td></tr></table>
 
@@ -4954,7 +4954,7 @@
 <p><span style="color: #000000">The code involved in this operation is as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-sql">
 <span class="odt-code-line">// Application bean</span>
-<span class="odt-code-line"><span style="color:#000000">  @Inject</span></span>
+<span class="odt-code-line">  @Inject</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Application application;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -5124,7 +5124,7 @@
 <p>This page is powered by the following model:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">// Application bean</span>
-<span class="odt-code-line"><span style="color:#000000">  @Inject</span></span>
+<span class="odt-code-line">  @Inject</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Application application;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -5144,7 +5144,7 @@
 </ul>
 
 <p><a id="refheading7740230114625"></a></p>
-<h4 id="3665-confirming-an-appointment">3.6.6.5. <span style="color: #4f81bd"><span style="color: #000000">Confirming an appointment</span></span></h4>
+<h4 id="3665-confirming-an-appointment">3.6.6.5. <span style="color: #000000">Confirming an appointment</span></h4>
 <p><span style="color: #000000">Confirming an appointment follows this sequence:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053C000001B64811B16D.png" style="display:inline-block; margin:4px;width:17.727cm;height:5.794cm;" class="odt-zoomable" data-zoom-src="images/100000000000053C000001B64811B16D.png" /></td></tr></table>
 
@@ -5156,7 +5156,7 @@
 <p><span style="color: #000000">The [Form].validerRv method will therefore handle this event. Its code is as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-sql">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// Application bean</span></span>
-<span class="odt-code-line"><span style="color:#000000">  @Inject</span></span>
+<span class="odt-code-line">  @Inject</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Application application;</span></span>
 <span class="odt-code-line">  </span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
@@ -5222,7 +5222,7 @@
 </code></pre></div>
 
 <p><a id="refheading7740630114625"></a></p>
-<h4 id="3667-back-to-the-home-page">3.6.6.7. <span style="color: #4f81bd"><span style="color: #000000">Back to the home page</span></span></h4>
+<h4 id="3667-back-to-the-home-page">3.6.6.7. <span style="color: #000000">Back to the home page</span></h4>
 <p><span style="color: #000000">There is one more action to look at, in the following sequence:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005370000019C3267DB5B.png" style="display:inline-block; margin:4px;width:17.662cm;height:5.45cm;" class="odt-zoomable" data-zoom-src="images/10000000000005370000019C3267DB5B.png" /></td></tr></table>
 

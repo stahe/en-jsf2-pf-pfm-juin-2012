@@ -1269,21 +1269,30 @@
 </code></pre></div>
 
 <p>[messages_fr.properties]: the French message file:</p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">forms=Form</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">input=Text input</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">textarea=Multi-line input</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">dropdown=Dropdown list</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">range=Slider</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">switch=Switch</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">checkbox=Checkbox</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">checkboxes=Checkboxes</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">radios=Radio buttons</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">submit=Submit</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">confirmations=Confirmations</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">back=Back</span></span>
-</code></pre></div>
-
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>forms=Form
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>input=Text input
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>textarea=Multi-line input
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>dropdown=Dropdown list
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>range=Slider
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>switch=Switch
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>checkbox=Checkbox
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>checkboxes=Checkboxes
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>radios=Radio buttons
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>submit=Submit
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>confirmations=Confirmations
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>back=Back
+</code></pre></div></td></tr></table></div>
 <p><a id="refheading1267431553644564"></a></p>
 <h3 id="854-the-primefaces-mobile-page">8.5.4. <span style="color: #4f81bd">The Primefaces mobile page</span></h3>
 <p>The [index.xhtml] page is as follows:</p>
@@ -1439,8 +1448,8 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.ManagedBean;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">javax.faces.bean.SessionScoped;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@ManagedBean</span></span>
-<span class="odt-code-line"><span style="color:#000000">@SessionScoped</span></span>
+<span class="odt-code-line">@ManagedBean</span>
+<span class="odt-code-line">@SessionScoped</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Form </span><span style="font-weight:bold;color:#7f0055">implements </span><span style="color:#000000">Serializable {</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// model</span></span>
 <span class="odt-code-line"></span>
