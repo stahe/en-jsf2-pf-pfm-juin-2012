@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -438,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="example-application-03-rdvmedecins-pf-ejb.html" class="md-nav__link">
+      <a href="sample-application-03-rdvmedecins-pf-ejb.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Example Application-03: rdvmedecins-pf-ejb
+    6. Sample Application-03: rdvmedecins-pf-ejb
   
 
     
@@ -499,7 +501,7 @@
   <span class="md-ellipsis">
     
   
-    8. Introduction to PrimeFaces Mobile
+    8. Introduction to Primefaces Mobile
   
 
     
@@ -628,10 +630,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#103-tests-with-eclipse" class="md-nav__link">
+  <a href="#103-testing-with-eclipse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3. Tests with Eclipse
+        10.3. Testing with Eclipse
       
     </span>
   </a>
@@ -639,10 +641,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#104-testing-on-a-mobile-device" class="md-nav__link">
+  <a href="#104-mobile-testing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.4. Testing on a mobile device
+        10.4. Mobile Testing
       
     </span>
   </a>
@@ -701,50 +703,50 @@
 
 
 
-<p><a id="refheading105123100051761"></a></p>
-<h1 id="10-example-application-06-rdvmedecins-pfm-spring">10. <span style="color: #365f91">Example Application-06: rdvmedecins-pfm-spring</span></h1>
-<p><a id="refheading105125100051761"></a></p>
+<p><span id="refheading105123100051761" name="refheading105123100051761" class="odt-bookmark-anchor"></span></p>
+<h1 id="10-example-application-06-rdvmedecins-pfm-spring">10. <span style="color: #365f91"><strong>Example Application-06: rdvmedecins-pfm-spring</strong></span></h1>
+<p><span id="refheading105125100051761" name="refheading105125100051761" class="odt-bookmark-anchor"></span></p>
 <h2 id="101-porting">10.1. <span style="color: #4f81bd">Porting</span></h2>
 <p><span style="color: #000000">We will now port the previous application to a Spring/Tomcat environment:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E90000011A5052F9EC.png" width="629" height="141" style="display:inline-block; margin:4px;width:16.63cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E90000011A5052F9EC.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004E90000011A5052F9EC.png" width="629" height="141" style="display:inline-block; margin:4px;width:16.63cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E90000011A5052F9EC.png" /></td></tr></table>
 
-<p><span style="color: #000000">We will rely on two applications that have already been written. We will use:</span></p>
+<p><span style="color: #000000">We will build upon two applications that have already been written. We will use:</span></p>
 <ul>
   <li><span style="color: #000000">the [DAO] and [JPA] layers from version 02 JSF / Spring,</span>
   </li>
-  <li><span style="color: #000000">the [web] / Primefaces Mobile layer from version 05 PFM / EJB,</span>
+  <li><span style="color: #000000">the [web] / Primefaces mobile layer from the version 05 PFM / EJB,</span>
   </li>
-  <li><span style="color: #000000">the Spring configuration files from version 02</span>
+  <li><span style="color: #000000">the Spring configuration files for version 02</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">Here, we are performing a task similar to the one done to port the JSF2 / EJB / Glassfish application to a JSF2 / Spring Tomcat environment. Therefore, we will provide fewer explanations. If necessary, the reader can refer to that port.</span></p>
-<p><span style="color: #000000">We are placing all the projects necessary for the porting into a new folder [rdvmedecins-pfm-spring] [1]:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E0000012E8297FB7D.png" width="647" height="151" style="display:inline-block; margin:4px;width:17.119cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E0000012E8297FB7D.png" /></td></tr></table>
+<p><span style="color: #000000">We are repeating here a process similar to the one used to port the JSF2 / EJB / Glassfish application to a JSF2 / Spring Tomcat environment. Therefore, we will provide fewer explanations. If necessary, the reader can refer to that port.</span></p>
+<p><span style="color: #000000">We are placing all the projects necessary for the port into a new folder [rdvmedecins-pfm-spring] [1]:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000050E0000012E8297FB7D.png" width="647" height="151" style="display:inline-block; margin:4px;width:17.119cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E0000012E8297FB7D.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">[mv-rdvmedecins-spring-dao-jpa]: the [DAO] and [JPA] layers of the JSF/Spring version 02,</span>
+  <li><span style="color: #000000">[mv-rdvmedecins-spring-dao-jpa]: the [DAO] and [JPA] layers of version 02 JSF / Spring,</span>
   </li>
-  <li><span style="color: #000000">[mv-rdvmedecins-spring-metier]: the [business] layer of version 02 JSF / Spring,</span>
+  <li><span style="color: #000000">[mv-rdvmedecins-spring-metier]: the [métier] layer of version 02 JSF / Spring,</span>
   </li>
-  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile]: the [web] layer of the PrimeFaces Mobile / EJB version 05,</span>
+  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile]: the [web] layer of the version 05 Primefaces mobile / EJB,</span>
   </li>
-  <li><span style="color: #000000">in [2], we load them into NetBeans,</span>
+  <li><span style="color: #000000">in [2], we load them into Netbeans,</span>
   </li>
-  <li><span style="color: #000000">in [3], the web project dependencies are no longer correct:</span>
+  <li><span style="color: #000000">to [3], the web project dependencies are no longer correct:</span>
     <ul>
-      <li><span style="color: #000000">the dependencies on the [DAO], [JPA], and [business] layers must be changed to now target the Spring projects;</span>
+      <li><span style="color: #000000">the dependencies on layers [DAO], [JPA], and [métier] must be changed to now target the Spring projects;</span>
       </li>
-      <li><span style="color: #000000">The GlassFish server provided the JSF libraries. This is no longer the case with the Tomcat server. They must therefore be added to the dependencies.</span>
+      <li><span style="color: #000000">the Glassfish server provided the libraries for JSF. This is no longer the case with the Tomcat server. They must therefore be added to the dependencies.</span>
       </li>
     </ul>
   </li>
 </ul>
 
-<p><span style="color: #000000">The [web] project evolves as follows:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002010000018764250CA2.png" width="257" height="196" style="display:inline-block; margin:4px;width:6.787cm;height:5.173cm;" class="odt-zoomable" data-zoom-src="images/10000000000002010000018764250CA2.png" /></td></tr></table>
+<p><span style="color: #000000">The [web] project has changed as follows:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002010000018764250CA2.png" width="257" height="196" style="display:inline-block; margin:4px;width:6.787cm;height:5.173cm;" class="odt-zoomable" data-zoom-src="images/10000000000002010000018764250CA2.png" /></td></tr></table>
 
-<p><span style="color: #000000">The [pom.xml] file for the [web] layer now has the following dependencies:</span></p>
+<p><span style="color: #000000">The [pom.xml] file in the [web] layer now has the following dependencies:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
@@ -782,10 +784,10 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">Errors appear. They are caused by the EJB references in the [web] layer. Let’s first examine the [Application] bean:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000481000002522F8AF1C3.png" width="577" height="297" style="display:inline-block; margin:4px;width:15.254cm;height:7.858cm;" class="odt-zoomable" data-zoom-src="images/1000000000000481000002522F8AF1C3.png" /></td></tr></table>
+<p><span style="color: #000000">Errors appear. They are caused by references to EJB from the [web] layer. Let’s first examine the [Application] bean:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000481000002522F8AF1C3.png" width="577" height="297" style="display:inline-block; margin:4px;width:15.254cm;height:7.858cm;" class="odt-zoomable" data-zoom-src="images/1000000000000481000002522F8AF1C3.png" /></td></tr></table>
 
-<p><span style="color: #000000">We remove all the lines causing errors due to missing packages, rename the [IMetierLocal] interface to [IMetier] (this is its name in the Spring [business] layer), and use Spring to instantiate it:</span></p>
+<p><span style="color: #000000">We remove all the lines causing errors due to missing packages, rename [IMetier] (its name in the [métier] Spring layer) to the [IMetierLocal] interface, and use Spring to instantiate it:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> beans;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -835,35 +837,35 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
+<ol>
+  <li><span style="color: #000000">lines 20-21: instantiation of the [métier] layer from the Spring configuration file. This file is the one used by the [métier] and [1] layers. We copy it into the [2] web project:</span>
+  </li>
+</ol>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003420000014064DB3365.png" width="417" height="160" style="display:inline-block; margin:4px;width:11.033cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003420000014064DB3365.png" /></td></tr></table>
+
 <ul>
-  <li><span style="color: #000000">lines 20-21: instantiation of the [business] layer from the Spring configuration file. This is the file used by the [business] layer [1]. We copy it into the web project [2]:</span>
+  <li><span style="color: #000000">lines 22–31: we handle any exceptions and store their stack trace in the field on line 14.</span>
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003420000014064DB3365.png" width="417" height="160" style="display:inline-block; margin:4px;width:11.033cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003420000014064DB3365.png" /></td></tr></table>
+<p><span style="color: #000000">With that done, the [Application] bean no longer has any errors. Now let’s look at the [Form], [1], and [2] beans:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004A0000002A4FC54EC56.png" width="592" height="338" style="display:inline-block; margin:4px;width:15.663cm;height:8.943cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A0000002A4FC54EC56.png" /></td></tr></table>
 
-<ul>
-  <li><span style="color: #000000">lines 22-31: we handle any exceptions and store their stack trace in the field on line 14.</span>
-  </li>
-</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>3</b></div><img src="images/10000000000000D1000000A837612899.png" width="146" height="118" style="display:inline-block; margin:4px;width:3.87cm;height:3.112cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D1000000A837612899.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>4</b></div><img src="images/10000000000000C9000000B71BBC6695.png" width="141" height="128" style="display:inline-block; margin:4px;width:3.72cm;height:3.387cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000B71BBC6695.png" /></td></tr></table></td></tr></table>
 
-<p><span style="color: #000000">With that done, the [Application] bean no longer has any errors. Let’s now look at the [Form] bean [1], [2]:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A0000002A4FC54EC56.png" width="592" height="338" style="display:inline-block; margin:4px;width:15.663cm;height:8.943cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A0000002A4FC54EC56.png" /></td></tr></table>
-
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>3</b></div><img src="images/10000000000000D1000000A837612899.png" width="146" height="118" style="display:inline-block; margin:4px;width:3.87cm;height:3.112cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D1000000A837612899.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>4</b></div><img src="images/10000000000000C9000000B71BBC6695.png" width="141" height="128" style="display:inline-block; margin:4px;width:3.72cm;height:3.387cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000B71BBC6695.png" /></td></tr></table></td></tr></table>
-
-<p><span style="color: #000000">We remove all the erroneous lines (imports and annotations) due to missing packages and rename the [ImetierLocal] interface to [IMetier]. This is sufficient to eliminate all errors [3].</span></p>
-<p><span style="color: #000000">Additionally, we need to add the getter and setter for the field </span></p>
+<p><span style="color: #000000">We remove all the erroneous lines (imports and annotations) due to missing packages and rename the [IMetier] interface to [ImetierLocal]. This is sufficient to eliminate all the [3] errors.</span></p>
+<p><span style="color: #000000">Additionally, we need to add the getter and setter for the </span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// bean Application</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Application application;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">Some of the annotations removed from the [Application] and [Form] beans declared the classes as beans with a specific scope. Now, this configuration is done in the following [faces-config.xml] file [4]:</span></p>
+<p><span style="color: #000000">Some of the annotations removed from the [Application] and [Form] beans declared the classes as beans with a specific scope. This configuration is now done in the following [faces-config.xml] and [4] files:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27;?&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;!-- =========== FULL CONFIGURATION FILE ================================== --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- =========== FULL CONFIGURATION FILE ================================== --&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;faces-config</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">version</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">2.0</span><span style="color:#800080">&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xmlns</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://java.sun.com/xml/ns/javaee</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span></span></span>
@@ -900,17 +902,17 @@
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;/faces-config&gt;</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">The port is complete. We can try running the web application.</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000173000002DF769E65A0.png" width="186" height="368" style="display:inline-block; margin:4px;width:4.911cm;height:9.73cm;" class="odt-zoomable" data-zoom-src="images/1000000000000173000002DF769E65A0.png" /></td></tr></table>
+<p><span style="color: #000000">The port is complete. We can now try running the web application.</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000173000002DF769E65A0.png" width="186" height="368" style="display:inline-block; margin:4px;width:4.911cm;height:9.73cm;" class="odt-zoomable" data-zoom-src="images/1000000000000173000002DF769E65A0.png" /></td></tr></table>
 
 <p><span style="color: #000000">We leave it to the reader to test this new application. We can improve it slightly to handle the case where the initialization of the [Application] bean failed. We know that in this case, the following fields have been initialized:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// errors</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Erreur&gt; erreurs = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Erreur&gt;();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Boolean erreur = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">This case can be handled in the [Form] bean’s </span><em><span style="color: #000000">init</span></em><span style="color: #000000"> method:</span></p>
+<p><span style="color: #000000">This scenario can be handled in the </span><em><span style="color: #000000">init</span></em><span style="color: #000000"> method of the [Form] bean:</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">PostConstruct</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> init() {</span></span></span>
@@ -923,40 +925,40 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      setForms(</span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">true</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// caching doctors and customers</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// doctors and clients are cached</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    ...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 </code></pre></div>
 
-<ul>
+<ol>
   <li><span style="color: #000000">line 5: if the [Application] bean failed to initialize,</span>
   </li>
   <li><span style="color: #000000">line 7: retrieve the list of errors,</span>
   </li>
   <li><span style="color: #000000">line 9: and display the error page.</span>
   </li>
-</ul>
+</ol>
 
-<p><span style="color: #000000">Thus, if we stop the MySQL DBMS and restart the application, we now see the following page:</span></p>
+<p><span style="color: #000000">Thus, if we stop SGBD and MySQL and restart the application, we now receive the following page:</span></p>
 <p><img src="images/100000000000016B000002EB7C2C41F1.png" width="254" height="523" style="width:6.72cm;height:13.829cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016B000002EB7C2C41F1.png" /></p>
-<p><a id="refheading105127100051761"></a></p>
+<p><span id="refheading105127100051761" name="refheading105127100051761" class="odt-bookmark-anchor"></span></p>
 <h2 id="102-conclusion">10.2. <span style="color: #4f81bd">Conclusion</span></h2>
-<p><span style="color: #000000">Porting the PrimeFaces Mobile/EJB/GlassFish application to a PrimeFaces Mobile/Spring/Tomcat environment proved to be straightforward. The memory leak issue reported in the study of the JSF/Spring/Tomcat application (Section</span><a href="#fuite-memoire-tomcat"><u><span style="color: #0563c1"> 4.3.5</span></u></a><span style="color: #000000">) remains. It will be resolved in the same manner.</span></p>
-<p><a id="refheading105129100051761"></a></p>
-<h2 id="103-tests-with-eclipse">10.3. <span style="color: #4f81bd">Tests with Eclipse</span></h2>
+<p><span style="color: #000000">Porting the Primefaces mobile / EJB / Glassfish application to a Primefaces mobile / Spring / Tomcat environment proved to be straightforward. The memory leak issue reported in the analysis of the JSF / Spring / Tomcat application (section</span><a href="sample-application---02-rdvmedecins-jsf2-spring.html#fuite-memoire-tomcat"><u><span style="color: #0563c1"> 4.3.5</span></u></a><span style="color: #000000">) remains. It will be resolved in the same manner.</span></p>
+<p><span id="refheading105129100051761" name="refheading105129100051761" class="odt-bookmark-anchor"></span></p>
+<h2 id="103-testing-with-eclipse">10.3. <span style="color: #4f81bd">Testing with Eclipse</span></h2>
 <p><span style="color: #000000">We import the Maven projects into Eclipse [1]:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005080000011B990B062E.png" width="644" height="142" style="display:inline-block; margin:4px;width:17.039cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000005080000011B990B062E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005080000011B990B062E.png" width="644" height="142" style="display:inline-block; margin:4px;width:17.039cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000005080000011B990B062E.png" /></td></tr></table>
 
 <p><span style="color: #000000">We run the web project [2].</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000504000001923996856D.png" width="642" height="201" style="display:inline-block; margin:4px;width:16.986cm;height:5.318cm;" class="odt-zoomable" data-zoom-src="images/1000000000000504000001923996856D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000504000001923996856D.png" width="642" height="201" style="display:inline-block; margin:4px;width:16.986cm;height:5.318cm;" class="odt-zoomable" data-zoom-src="images/1000000000000504000001923996856D.png" /></td></tr></table>
 
 <p><span style="color: #000000">We select the Tomcat server [3]. The application’s home page is then displayed in Eclipse’s internal browser [4].</span></p>
-<p><a id="refheading6290511854047529"></a></p>
-<h2 id="104-testing-on-a-mobile-device">10.4. <span style="color: #4f81bd">Testing on a mobile device</span></h2>
-<p><span style="color: #000000">To test the application on a mobile device, follow the steps outlined in section</span><a href="#tests-avec-vrai-smartphone"><u><span style="color: #0563c1"> 8.5.6</span></u></a><span style="color: #000000">. Here are some screenshots of the application:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059B0000097C3912D09A.jpg" width="287" height="485" style="display:inline-block; margin:4px;width:7.59cm;height:12.843cm;" class="odt-zoomable" data-zoom-src="images/100000000000059B0000097C3912D09A.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005D40000097B0617DC08.jpg" width="299" height="486" style="display:inline-block; margin:4px;width:7.9cm;height:12.852cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D40000097B0617DC08.jpg" /></td></tr></table>
+<p><span id="refheading6290511854047529" name="refheading6290511854047529" class="odt-bookmark-anchor"></span></p>
+<h2 id="104-mobile-testing">10.4. <span style="color: #4f81bd">Mobile Testing</span></h2>
+<p><span style="color: #000000">To test the application on a mobile device, follow the steps outlined in section</span><a href="introduction-to-primefaces-mobile.html#tests-avec-vrai-smartphone"><u><span style="color: #0563c1"> 8.5.6</span></u></a><span style="color: #000000">. Here are some screenshots of the application:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000059B0000097C3912D09A.jpg" width="287" height="485" style="display:inline-block; margin:4px;width:7.59cm;height:12.843cm;" class="odt-zoomable" data-zoom-src="images/100000000000059B0000097C3912D09A.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005D40000097B0617DC08.jpg" width="299" height="486" style="display:inline-block; margin:4px;width:7.9cm;height:12.852cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D40000097B0617DC08.jpg" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000607000009B4A299E3EF.jpg" width="309" height="497" style="display:inline-block; margin:4px;width:8.17cm;height:13.152cm;" class="odt-zoomable" data-zoom-src="images/1000000000000607000009B4A299E3EF.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005B0000009757E64FA99.jpg" width="291" height="484" style="display:inline-block; margin:4px;width:7.699cm;height:12.802cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B0000009757E64FA99.jpg" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000607000009B4A299E3EF.jpg" width="309" height="497" style="display:inline-block; margin:4px;width:8.17cm;height:13.152cm;" class="odt-zoomable" data-zoom-src="images/1000000000000607000009B4A299E3EF.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005B0000009757E64FA99.jpg" width="291" height="484" style="display:inline-block; margin:4px;width:7.699cm;height:12.802cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B0000009757E64FA99.jpg" /></td></tr></table>
 
 
 

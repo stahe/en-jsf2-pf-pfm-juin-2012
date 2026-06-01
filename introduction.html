@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -374,10 +376,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-sample" class="md-nav__link">
+  <a href="#12-the-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2. Sample
+        1.2. The example
       
     </span>
   </a>
@@ -397,10 +399,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#131-installing-the-netbeans-ide" class="md-nav__link">
+  <a href="#131-installation-of-ide-netbeans" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3.1. Installing the NetBeans IDE
+        1.3.1. Installation of IDE Netbeans
       
     </span>
   </a>
@@ -408,10 +410,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#132-installing-the-eclipse-ide" class="md-nav__link">
+  <a href="#132-installing-ide-eclipse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3.2. Installing the Eclipse IDE
+        1.3.2. Installing IDE Eclipse
       
     </span>
   </a>
@@ -422,7 +424,7 @@
   <a href="#133-installation-of-wampserver" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3.3. Installation of [ WampServer]
+        1.3.3. Installation of [WampServer]
       
     </span>
   </a>
@@ -557,14 +559,14 @@
   
   
     <li class="md-nav__item">
-      <a href="example-application-03-rdvmedecins-pf-ejb.html" class="md-nav__link">
+      <a href="sample-application-03-rdvmedecins-pf-ejb.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Example Application-03: rdvmedecins-pf-ejb
+    6. Sample Application-03: rdvmedecins-pf-ejb
   
 
     
@@ -618,7 +620,7 @@
   <span class="md-ellipsis">
     
   
-    8. Introduction to PrimeFaces Mobile
+    8. Introduction to Primefaces Mobile
   
 
     
@@ -729,21 +731,21 @@
 
 
 
-<p><a id="refheading1882601168461456"></a></p>
+<p><span id="refheading1882601168461456" name="refheading1882601168461456" class="odt-bookmark-anchor"></span></p>
 <h1 id="1-introduction">1. <span style="color: #365f91">Introduction</span></h1>
-<p><a id="refheading1433201675182081"></a></p>
+<p><span id="refheading1433201675182081" name="refheading1433201675182081" class="odt-bookmark-anchor"></span></p>
 <h2 id="11-overview">1.1. <span style="color: #4f81bd">Overview</span></h2>
-<p>The PDF of this document is |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQAJPXELRMViTaJLjA9QYSd4ATr_8_Wz28Fv0nHNnyyKuR0?e=3ci0KM">HERE</a>|.</p>
-<p>The examples in this document are available |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=vxDwmS">HERE</a>|.</p>
-<p>Here, we aim to introduce, using examples </p>
+<p>The PDF for this document is |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQAJPXELRMViTaJLjA9QYSd4ATr_8_Wz28Fv0nHNnyyKuR0?e=aVd31E">HERE</a>|.</p>
+<p>The examples in this document are available |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=UgTmUu">HERE</a>|.</p>
+<p>Here, we propose to introduce, using examples </p>
 <ul>
-<li>the <strong>Java Server Faces 2</strong> (JSF2) framework,</li>
+<li>the <strong>Java Server Faces 2</strong> framework (JSF2),</li>
 <li>the <strong>PrimeFaces</strong> component library for JSF2, for desktop and mobile applications.</li>
 </ul>
-<p>This document is primarily intended for students and developers interested in the PrimeFaces component library [<a href="http://www.primefaces.org/"><u><span style="color: #0563c1">http://www.primefaces.org</span></u></a>]. This framework offers dozens of AJAX-enabled components [<a href="http://www.primefaces.org/showcase/ui/home.jsf"><u><span style="color: #0563c1">http://www.primefaces.org/showcase/ui/home.jsf</span></u></a>] that allow you to build web applications with a look and feel similar to desktop applications. PrimeFaces is based on JSF2, hence the need to first introduce this framework. PrimeFaces also offers specific components for mobile devices. We will cover those as well.</p>
+<p>This document is primarily intended for students and developers interested in the PrimeFaces and [http://www.primefaces.org] component libraries. This framework offers dozens of AJAX-enabled [http://www.primefaces.org/showcase/ui/home.jsf] components that allow you to build web applications with a look and feel similar to that of desktop applications. Primefaces is based on JSF2, hence the need to first introduce this framework. Primefaces also offers specific components for mobile devices. We will present these as well.</p>
 <p>To illustrate our point, we will build an appointment scheduling application in different environments:</p>
 <ol>
-<li>a classic web application using JSF2 / EJB3 / JPA technologies on a GlassFish 3.1 server,</li>
+<li>a classic web application using JSF2 / EJB3 / JPA technologies on a Glassfish 3.1 server,</li>
 </ol>
 <ol start="2">
   <li>the same application with AJAX support, using PrimeFaces technology,
@@ -752,78 +754,78 @@
   </li>
 </ol>
 
-<p>Each time a version is built, we will deploy it to a JSF2 / Spring / JPA environment on a Tomcat 7 server. We will therefore build six Java EE applications.</p>
-<p>This document covers <strong>only what is necessary to build these applications</strong>. Therefore, do not expect it to be exhaustive—you won’t find that here. Nor is it a collection of best practices. Experienced developers may find that they would have done things differently. I simply hope that this document is not a collection of bad practices either.</p>
-<p>To learn more about JSF2 and PrimeFaces, you can use the following reference<a id="references"></a> :</p>
+<p>Each time a version is built, we will deploy it to a JSF2 / Spring / JPA environment on a Tomcat 7 server. We will therefore build six Java applications EE.</p>
+<p>This document presents <strong>only what is necessary to build these applications</strong>. Therefore, one should not look for completeness here. It is not to be found. Nor is this a collection of best practices. Seasoned developers may find that they would have done things differently. I simply hope that this document is not a collection of bad practices either.</p>
+<p>For further information on JSF2 and PrimeFaces, you can use the following reference<span id="references" name="references" class="odt-bookmark-anchor"></span> s:</p>
 <ul>
-  <li><b>[ref1]: Java EE5 Tutorial </b>[<a href="http://java.sun.com/javaee/5/docs/tutorial/doc/index.html"><u><span style="color: #0563c1">http://java.sun.com/javaee/5/docs/tutorial/doc/index.HTML</span></u></a>], the Sun reference for learning Java EE5. Read Part II [Web Tier] to explore web technology, particularly JSF. The tutorial examples can be downloaded. They come in the form of NetBeans projects that can be loaded and run,
+  <li><b>[ref1]: Java EE5 Tutorial </b>[http://java.sun.com/javaee/5/docs/tutorial/doc/index.HTML], the Sun reference for learning Java EE5. Read the section on II [Web Tier] to learn about web technology, particularly JSF. The examples from the tutorial can be downloaded. They come in the form of Netbeans projects that can be loaded and run,
   </li>
   <li><b>[ref2]: Core JavaServer Faces </b>by David Geary and Cay S. Horstmann, third edition, published by McGraw-Hill,
   </li>
-  <li><b>[ref3]</b>: PrimeFaces documentation [<a href="http://primefaces.googlecode.com/files/primefaces_users_guide_3_2.pdf"><u><span style="color: #0563c1">http://primefaces.googlecode.com/files/primefaces_users_guide_3_2.pdf</span></u></a>],
+  <li><b>[ref3]</b>: the PrimeFaces documentation,
   </li>
-  <li><b>[ref4]</b>: PrimeFaces Mobile documentation: [<a href="http://primefaces.googlecode.com/files/primefaces_mobile_users_guide_0_9_2.pdf"><u><span style="color: #0563c1">http://primefaces.googlecode.com/files/primefaces_mobile_users_guide_0_9_2.pdf</span></u></a>].
+  <li><b>[ref4]</b>: the documentation for PrimeFaces Mobile: [http://primefaces.googlecode.com/files/primefaces_mobile_users_guide_0_9_2.pdf].
   </li>
 </ul>
 
-<p>We will occasionally refer to [<strong>ref2]</strong> to indicate to the reader that they can explore a topic in greater depth using this book.</p>
+<p>We will occasionally refer to [ref2] to let the reader know that they can explore a topic in greater depth with this book.</p>
 <p>This document has been written to be accessible to as wide an audience as possible. The prerequisites for understanding it are as follows:</p>
 <ul>
   <li>knowledge of the Java language,
   </li>
-  <li>basic knowledge of Java EE development.
+  <li>basic knowledge of Java development EE.
   </li>
 </ul>
 
-<p>All the resources needed to meet these prerequisites can be found on the website [<a href="https://developpez.com/"><u><span style="color: #0563c1">https://developpez.com</span></u></a>]. Some of them can be found on the website [<a href="https://tahe.developpez.com/"><u><span style="color: #0563c1">https://tahe.developpez.com</span></u></a>]:</p>
+<p>All the resources necessary to meet these prerequisites can be found on the [http://developpez.com] website. Some of them can be found on the [http://tahe.developpez.com] website:</p>
 <ul>
-  <li><b>[ref5]: </b><a href="https://stahe.github.io/en-servlets-java-juin-2002/"><u><span style="color: #0563c1">Introduction to Web Programming in Java</span></u></a> (September 2002): covers the basics of web programming in Java: <b>servlets </b>and <b>JSP pages,</b>
+  <li><b>[ref5]: </b><a href="https://stahe.github.io/en-java-sept-1998/"><u><span style="color: #0563c1">Introduction to Web Programming in Java</span></u></a> (September 2002): covers the basics of web programming in Java: <b>servlets </b>and <b>pages JSP,</b>
   </li>
-  <li><b>[ref6]: </b><a href="https://stahe.github.io/en-java-web-mvc-mai-2006/"><u><span style="color: #0563c1">The Basics of MVC Web Development in Java</span></u></a> (May 2006) []: recommends developing web applications using three-tier architectures, where the web tier implements the <b>MVC</b> (Model, View, Controller) design pattern.
+  <li><b>[ref6]: </b><a href="https://stahe.github.io/en-java-web-mvc-mai-2006/"><u><span style="color: #0563c1">The Basics of Web Development in Java</span></u></a> (May 2006) []: recommends developing web applications using three-tier architectures, where the web tier implements the Model-View-Controller (<b>MVC</b>) design pattern.
   </li>
-  <li>[<b>ref7</b>]: <a href="https://stahe.github.io/en-javaee-juin-2012/"><u><span style="color: #0563c1">Introduction to Java EE 5</span></u></a> (January 2012).
+  <li>[ref7]: <a href="https://stahe.github.io/en-javaee-juin-2012/"><u><span style="color: #0563c1">Introduction to Java 5</span></u></a> (June 2010). This document introduces <b>Java 1 </b>and the <b>Java 5 features</b>.
   </li>
-  <li>[<b>ref8</b>]: <a href="https://stahe.github.io/en-jpa-juin-2007/"><u><span style="color: #0563c1">Java Persistence in Practice</span></u></a> (June 2007). This document provides an introduction to data persistence using <b>JPA </b>(<b>Java Persistence API</b>).
+  <li>[ref8]: <a href="https://stahe.github.io/en-jpa-juin-2007/"><u><span style="color: #0563c1">Java Persistence in Practice</span></u></a> (June 2007). This document introduces data persistence with <b>JPA </b>(<b>Java Persistence API</b>).
   </li>
-  <li>[<b>ref9</b>]: <a href="https://stahe.github.io/en-webservice-netbeans-glassfish-fev-2009/"><u><span style="color: #0563c1">Building a Java EE Web Service with NetBeans and the GlassFish Server</span></u></a> (January 2009). This document explores the process of building a web service. The sample application discussed in this document is taken from [<b>ref9</b>].
+  <li>[ref9]: <a href="https://stahe.github.io/en-webservice-netbeans-glassfish-fev-2009/"><u><span style="color: #0563c1">Building a Java Web Service EE Using Netbeans and the Glassfish Server</span></u></a> (January 2009). This document discusses the process of building a web service. The sample application discussed in this document is taken from [ref9].
   </li>
 </ul>
 
-<p><a id="refheading1433221675182081"></a>
-<a id="dossier-exemples"></a>
-<a id="exemples-document"></a></p>
-<h2 id="12-sample">1.2. <span style="color: #4f81bd">Sample</span></h2>
-<p>The examples in this document are available |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=vxDwmS">HERE</a>| as Maven projects for both NetBeans and Eclipse:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DE000000E77F67D3C4.png" width="155" height="162" style="display:inline-block; margin:4px;width:4.11cm;height:4.277cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DE000000E77F67D3C4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p><span id="refheading1433221675182081" name="refheading1433221675182081" class="odt-bookmark-anchor"></span>
+<span id="exemples-document" name="exemples-document" class="odt-bookmark-anchor"></span>
+<span id="dossier-exemples" name="dossier-exemples" class="odt-bookmark-anchor"></span></p>
+<h2 id="12-the-example">1.2. <span style="color: #4f81bd"><strong>The example</strong></span></h2>
+<p>The examples in this document are available at URL <a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=UgTmUu">HERE</a> in the form of Maven projects for both Netbeans and Eclipse:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000DE000000E77F67D3C4.png" width="155" height="162" style="display:inline-block; margin:4px;width:4.11cm;height:4.277cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DE000000E77F67D3C4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>To import a project into NetBeans:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000068A0000023216723942.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.041cm;" class="odt-zoomable" data-zoom-src="images/100000000000068A0000023216723942.png" /></td></tr></table>
+<p>To import a project into Netbeans:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000068A0000023216723942.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.041cm;" class="odt-zoomable" data-zoom-src="images/100000000000068A0000023216723942.png" /></td></tr></table>
 
 <ul>
   <li>In [1], open a project,
   </li>
   <li>in [2], select the project to open in the file system,
   </li>
-  <li>in [3], it opens.
+  <li>in [3], it is opened.
   </li>
 </ul>
 
 <p>With Eclipse,</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004350000023E590AB225.png" width="539" height="287" style="display:inline-block; margin:4px;width:14.249cm;height:7.594cm;" class="odt-zoomable" data-zoom-src="images/10000000000004350000023E590AB225.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004350000023E590AB225.png" width="539" height="287" style="display:inline-block; margin:4px;width:14.249cm;height:7.594cm;" class="odt-zoomable" data-zoom-src="images/10000000000004350000023E590AB225.png" /></td></tr></table>
 
 <ul>
-  <li>in [1], import a project,
+  <li>in [1], a project is imported,
   </li>
   <li>in [2], the project is an existing Maven project,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000078900000214D7121E26.png" width="680" height="188" style="display:inline-block; margin:4px;width:17.997cm;height:4.964cm;" class="odt-zoomable" data-zoom-src="images/100000000000078900000214D7121E26.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000078900000214D7121E26.png" width="680" height="188" style="display:inline-block; margin:4px;width:17.997cm;height:4.964cm;" class="odt-zoomable" data-zoom-src="images/100000000000078900000214D7121E26.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000078F00000211ACAE7A90.png" width="680" height="186" style="display:inline-block; margin:4px;width:17.997cm;height:4.919cm;" class="odt-zoomable" data-zoom-src="images/100000000000078F00000211ACAE7A90.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000078F00000211ACAE7A90.png" width="680" height="186" style="display:inline-block; margin:4px;width:17.997cm;height:4.919cm;" class="odt-zoomable" data-zoom-src="images/100000000000078F00000211ACAE7A90.png" /></td></tr></table>
 
 <ul>
-  <li>in [3]: you select it in the file system,
+  <li>in [3]: it is selected in the file system,
   </li>
   <li>in [4]: Eclipse recognizes it as a Maven project,
   </li>
@@ -831,142 +833,142 @@
   </li>
 </ul>
 
-<p><a id="refheading99551454977699"></a></p>
+<p><span id="refheading99551454977699" name="refheading99551454977699" class="odt-bookmark-anchor"></span></p>
 <h2 id="13-tools-used">1.3. <span style="color: #4f81bd">Tools used</span></h2>
-<p>Moving forward, we are using (as of May 2012):</p>
+<p>Moving forward, we are using (May 2012):</p>
 <ul>
-  <li>the <b>NetBeans</b> 7.1.2 IDE (Integrated Development Environment) available at [<a href="http://www.netbeans.org/"><u><span style="color: #0563c1">http://www.netbeans.org</span></u></a>],
+  <li>IDE (Integrated Development Environment) <b>Netbeans</b> 7.1.2 available on URL [http://www.netbeans.org],
   </li>
-  <li>the Eclipse Indigo IDE [<a href="http://www.eclipse.org/"><u><span style="color: #0563c1">http://www.eclipse.org/</span></u></a>] in its customized <b>SpringSource Tool Suite </b>(STS) form [<a href="http://www.springsource.com/developer/sts"><u><span style="color: #0563c1">http://www.springsource.com/developer/sts</span></u></a>],
+  <li>IDE Eclipse Indigo [http://www.eclipse.org/] in its customized form <b>SpringSource Tool Suite </b>(STS) [http://www.springsource.com/developer/sts],
   </li>
-  <li><b>PrimeFaces </b>version 3.2, available at [<a href="http://primefaces.org/"><u><span style="color: #0563c1">http://primefaces.org/</span></u></a>],
+  <li><b>PrimeFaces </b>in its version 3.2 version available at URL [http://primefaces.org/],
   </li>
-  <li><b>PrimeFaces Mobile </b>version 0.9.2, available at [<a href="http://primefaces.org/"><u><span style="color: #0563c1">http://primefaces.org/</span></u></a>],
+  <li><b>PrimeFaces Mobile </b>in its version 0.9.2 available at URL [http://primefaces.org/],
   </li>
-  <li><b>WampServer </b>for the MySQL database [<a href="http://www.wampserver.com/"><u><span style="color: #0563c1">http://www.wampserver.com/</span></u></a>].
+  <li><b>WampServer </b>for SGBD, MySQL, and [http://www.wampserver.com/].
   </li>
 </ul>
 
-<p><a id="refheading78364566070260"></a></p>
-<h3 id="131-installing-the-netbeans-ide">1.3.1. <span style="color: #4f81bd">Installing the NetBeans IDE</span></h3>
-<p>Here we describe the installation of NetBeans 7.1.2, available at the URL [<a href="http://netbeans.org/downloads/"><u><span style="color: #0563c1">http://netbeans.org/downloads/</span></u></a>].</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002560000020F9DBDB580.png" width="419" height="369" style="display:inline-block; margin:4px;width:11.081cm;height:9.765cm;" class="odt-zoomable" data-zoom-src="images/10000000000002560000020F9DBDB580.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p><span id="refheading78364566070260" name="refheading78364566070260" class="odt-bookmark-anchor"></span></p>
+<h3 id="131-installation-of-ide-netbeans">1.3.1. <span style="color: #4f81bd">Installation of IDE Netbeans</span></h3>
+<p>Here we describe the installation of Netbeans 7.1.2, available for URL and [http://netbeans.org/downloads/].</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002560000020F9DBDB580.png" width="419" height="369" style="display:inline-block; margin:4px;width:11.081cm;height:9.765cm;" class="odt-zoomable" data-zoom-src="images/10000000000002560000020F9DBDB580.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>You can choose the Java EE version with both GlassFish 3.1.2 and Apache Tomcat 7.0.22. The former allows you to develop Java EE applications with EJB3 (Enterprise JavaBeans), and the latter allows you to develop Java EE applications without EJB. We will then replace the EJBs with the Spring framework [<a href="http://www.springsource.com/"><u><span style="color: #0563c1">http://www.springsource.com/</span></u></a>].</p>
-<p>Once the NetBeans installer has been downloaded, run it. To do this, you must have a JDK (Java Development Kit) [<a href="http://www.oracle.com/technetwork/java/javase/overview/index.html"><u><span style="color: #0563c1">http://www.oracle.com/technetwork/java/javase/overview/index.HTML</span></u></a>]. In addition to NetBeans 7.1.2, install:</p>
+<p>We can use the version Java EE with both Glassfish 3.1.2 and Apache Tomcat 7.0.22 servers. The first allows for the development of Java applications EE with EJB3 (Enterprise Java Bean), and the other for Java applications EE without EJB. We will then replace the EJBs with the Spring framework.</p>
+<p>Once the Netbeans installer has been downloaded, run it. To do this, you must have JDK (Java Development Kit) [http://www.oracle.com/technetwork/java/javase/overview/index.HTML]. In addition to Netbeans 7.1.2, we will install:</p>
 <ul>
   <li>the JUnit framework for unit testing,
   </li>
-  <li>the GlassFish 3.1.2 server,
+  <li>the Glassfish 3.1.2 server,
   </li>
   <li>the Tomcat 7.0.22 server.
   </li>
 </ul>
 
-<p>Once the installation is complete, launch NetBeans:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007220000021C4FE4ACE3.png" width="680" height="201" style="display:inline-block; margin:4px;width:17.997cm;height:5.322cm;" class="odt-zoomable" data-zoom-src="images/10000000000007220000021C4FE4ACE3.png" /></td></tr></table>
+<p>Once the installation is complete, launch Netbeans:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007220000021C4FE4ACE3.png" width="680" height="201" style="display:inline-block; margin:4px;width:17.997cm;height:5.322cm;" class="odt-zoomable" data-zoom-src="images/10000000000007220000021C4FE4ACE3.png" /></td></tr></table>
 
 <ul>
-  <li>in [1], NetBeans 7.1.2 with three tabs:
+  <li>in [1], Netbeans 7.1.2 with three tabs:
   </li>
-  <li>the [Projects] tab displays the open NetBeans projects;
+  <li>the [Projects] tab displays the open Netbeans projects;
   </li>
-  <li>the [Files] tab displays the various files that make up the open NetBeans projects;
+  <li>the [Files] tab displays the various files that make up the open Netbeans projects;
   </li>
-  <li>the [Services] tab groups together a number of tools used by NetBeans projects,
+  <li>the [Services] tab groups together a number of tools used by the Netbeans projects;
   </li>
-  <li>in [2], select the [Services] tab, and in [3], select the [Servers] section;
+  <li>In [2], the [Services] tab is activated, and in [3], the [Servers] branch is activated;
   </li>
-  <li>in [4], launch the Tomcat server to verify that it is installed correctly,
+  <li>in [4], we start the Tomcat server to verify that it is installed correctly,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000768000002351735BA3A.png" width="680" height="203" style="display:inline-block; margin:4px;width:17.997cm;height:5.362cm;" class="odt-zoomable" data-zoom-src="images/1000000000000768000002351735BA3A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000768000002351735BA3A.png" width="680" height="203" style="display:inline-block; margin:4px;width:17.997cm;height:5.362cm;" class="odt-zoomable" data-zoom-src="images/1000000000000768000002351735BA3A.png" /></td></tr></table>
 
 <ul>
-  <li>in [6], in the [Apache Tomcat] tab [5], you can verify that the server has started correctly,
+  <li>In [6], in the [Apache Tomcat] and [5] tabs, you can verify that the server started correctly,
   </li>
   <li>In [7], stop the Tomcat server,
   </li>
 </ul>
 
-<p>Follow the same steps to verify that the GlassFish 3.1.2 server is installed correctly:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000076A0000022F67E74673.png" width="680" height="200" style="display:inline-block; margin:4px;width:17.997cm;height:5.3cm;" class="odt-zoomable" data-zoom-src="images/100000000000076A0000022F67E74673.png" /></td></tr></table>
+<p>Proceed in the same way to verify the correct installation of the Glassfish server 3.1.2:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000076A0000022F67E74673.png" width="680" height="200" style="display:inline-block; margin:4px;width:17.997cm;height:5.3cm;" class="odt-zoomable" data-zoom-src="images/100000000000076A0000022F67E74673.png" /></td></tr></table>
 
 <ul>
-  <li>In [8], start the GlassFish server,
+  <li>In [8], start the server Glassfish,
   </li>
-  <li>In [9], verify that it has started correctly,
+  <li>In [9], verify that it started correctly,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000221000002170D8AF1BB.png" width="273" height="268" style="display:inline-block; margin:4px;width:7.211cm;height:7.078cm;" class="odt-zoomable" data-zoom-src="images/1000000000000221000002170D8AF1BB.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000221000002170D8AF1BB.png" width="273" height="268" style="display:inline-block; margin:4px;width:7.211cm;height:7.078cm;" class="odt-zoomable" data-zoom-src="images/1000000000000221000002170D8AF1BB.png" /></td></tr></table>
 
 <ul>
-  <li>in [10], stop it.
+  <li>in [10], we stop it.
   </li>
 </ul>
 
-<p>We now have a fully functional IDE. We can start building projects. As we work on these projects, we’ll explore various features of the IDE.</p>
-<p>We will now install the Eclipse IDE and register the two servers—Tomcat 7 and GlassFish 3.1.2—that we just downloaded within it. To do this, we need to know the installation directories for these two servers. This information can be found in the properties of these two servers:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000670000002C91250A8B5.png" width="680" height="294" style="display:inline-block; margin:4px;width:17.997cm;height:7.786cm;" class="odt-zoomable" data-zoom-src="images/1000000000000670000002C91250A8B5.png" /></td></tr></table>
+<p>We now have an operational IDE. We can begin building projects. Depending on these projects, we will need to explore various features of IDE.</p>
+<p>We will now install the IDE Eclipse environment and, within it, register the two servers—Tomcat 7 and Glassfish 3.1.2—that we just downloaded. To do this, we need to know the installation directories for these two servers. This information can be found in the properties of these two servers:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000670000002C91250A8B5.png" width="680" height="294" style="display:inline-block; margin:4px;width:17.997cm;height:7.786cm;" class="odt-zoomable" data-zoom-src="images/1000000000000670000002C91250A8B5.png" /></td></tr></table>
 
 <ul>
   <li>in [1], the installation folder for Tomcat 7,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000036A00000204F3716BDE.png" width="437" height="258" style="display:inline-block; margin:4px;width:11.562cm;height:6.826cm;" class="odt-zoomable" data-zoom-src="images/100000000000036A00000204F3716BDE.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000036A00000204F3716BDE.png" width="437" height="258" style="display:inline-block; margin:4px;width:11.562cm;height:6.826cm;" class="odt-zoomable" data-zoom-src="images/100000000000036A00000204F3716BDE.png" /></td></tr></table>
 
 <ul>
-  <li>in [2], the GlassFish server domains folder. When registering GlassFish in Eclipse, you will only need to provide the following information [D:\Programs\devjava\Glassfish\glassfish-3.1.2\glassfish].
+  <li>In [2], the domain folder of the Glassfish server. In the Glassfish entry in Eclipse, you need to provide only the following information: [D:\Programs\devjava\Glassfish\glassfish-3.1.2\glassfish].
   </li>
 </ul>
-<p><a id="refheading78366566070260"></a></p>
-<h3 id="132-installing-the-eclipse-ide">1.3.2. <span style="color: #4f81bd">Installing the Eclipse IDE</span></h3>
-<p>Although Eclipse is not the IDE used in this document, we will nevertheless describe its installation. This is because the examples in the document are also provided as Maven projects for Eclipse. Eclipse does not come with Maven pre-installed. You must install a plugin to do this. Rather than installing a bare-bones Eclipse, we will install <strong>SpringSource Tool Suite</strong> [<a href="http://www.springsource.com/developer/sts"><u><span style="color: #0563c1">http://www.springsource.com/developer/sts</span></u></a>], an Eclipse pre-equipped with numerous plugins related to the Spring framework as well as a pre-installed Maven configuration.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006C40000032EEF303571.png" width="680" height="320" style="display:inline-block; margin:4px;width:17.997cm;height:8.458cm;" class="odt-zoomable" data-zoom-src="images/10000000000006C40000032EEF303571.png" /></td></tr></table>
+<p><span id="refheading78366566070260" name="refheading78366566070260" class="odt-bookmark-anchor"></span></p>
+<h3 id="132-installing-ide-eclipse">1.3.2. <span style="color: #4f81bd">Installing IDE Eclipse</span></h3>
+<p>Although Eclipse is not the IDE used in this document, we will nevertheless describe its installation. This is because the examples in the document are also provided as Maven projects for Eclipse. Eclipse does not come with Maven pre-installed. You must install a plugin to do this. Rather than installing a bare-bones Eclipse, we will install <strong>the SpringSource Tool Suite</strong> [http://www.springsource.com/developer/sts], an Eclipse pre-equipped with numerous plugins related to the Spring framework as well as a pre-installed Maven configuration.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006C40000032EEF303571.png" width="680" height="320" style="display:inline-block; margin:4px;width:17.997cm;height:8.458cm;" class="odt-zoomable" data-zoom-src="images/10000000000006C40000032EEF303571.png" /></td></tr></table>
 
 <ul>
-  <li>Go to the  <b>SpringSource Tool Suite </b>(STS) website  [1] to download the current version of STS [2A] [2B].
-  </li>
-</ul>
-
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000073C000001845F031E1E.png" width="680" height="142" style="display:inline-block; margin:4px;width:17.997cm;height:3.769cm;" class="odt-zoomable" data-zoom-src="images/100000000000073C000001845F031E1E.png" /></td></tr></table>
-
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000082A000003701E1ABF62.png" width="680" height="286" style="display:inline-block; margin:4px;width:17.997cm;height:7.578cm;" class="odt-zoomable" data-zoom-src="images/100000000000082A000003701E1ABF62.png" /></td></tr></table>
-
-<ul>
-  <li>The downloaded file is an installer that creates the file directory structure [3A] [3B]. In [4], we launch the executable,
-  </li>
-  <li>in [5], the IDE workspace after closing the welcome window. In [6], display the application servers window,
+  <li>Go to the <b>SpringSource Tool Suite </b>(STS) website [1], to download the current version of version from STS [2A] [2B],
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000078E000003F138BD131F.png" width="680" height="355" style="display:inline-block; margin:4px;width:17.997cm;height:9.389cm;" class="odt-zoomable" data-zoom-src="images/100000000000078E000003F138BD131F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000073C000001845F031E1E.png" width="680" height="142" style="display:inline-block; margin:4px;width:17.997cm;height:3.769cm;" class="odt-zoomable" data-zoom-src="images/100000000000073C000001845F031E1E.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000082A000003701E1ABF62.png" width="680" height="286" style="display:inline-block; margin:4px;width:17.997cm;height:7.578cm;" class="odt-zoomable" data-zoom-src="images/100000000000082A000003701E1ABF62.png" /></td></tr></table>
+
+<ul>
+  <li>the downloaded file is an installer that creates the [3A] [3B] file tree. In [4], launch the executable,
+  </li>
+  <li>in [5], the IDE work window appears after closing the welcome window. In [6], the application servers window is displayed,
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000078E000003F138BD131F.png" width="680" height="355" style="display:inline-block; margin:4px;width:17.997cm;height:9.389cm;" class="odt-zoomable" data-zoom-src="images/100000000000078E000003F138BD131F.png" /></td></tr></table>
 
 <ul>
   <li>in [7], the servers window. A server is registered. It is a VMware server that we will not use. In [8], we call up the wizard for adding a new server,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000061A000003A6519CD371.png" width="680" height="407" style="display:inline-block; margin:4px;width:17.997cm;height:10.761cm;" class="odt-zoomable" data-zoom-src="images/100000000000061A000003A6519CD371.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000061A000003A6519CD371.png" width="680" height="407" style="display:inline-block; margin:4px;width:17.997cm;height:10.761cm;" class="odt-zoomable" data-zoom-src="images/100000000000061A000003A6519CD371.png" /></td></tr></table>
 
 <ul>
-  <li>in [9A], various servers are offered. We choose to install an Apache Tomcat 7 server [9B],
+  <li>in [9A], various servers are offered to us. We choose to install an Apache Tomcat 7 server [9B],
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007740000023649ED67E1.png" width="680" height="202" style="display:inline-block; margin:4px;width:17.997cm;height:5.339cm;" class="odt-zoomable" data-zoom-src="images/10000000000007740000023649ED67E1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007740000023649ED67E1.png" width="680" height="202" style="display:inline-block; margin:4px;width:17.997cm;height:5.339cm;" class="odt-zoomable" data-zoom-src="images/10000000000007740000023649ED67E1.png" /></td></tr></table>
 
 <ul>
-  <li>in [10], we specify the installation directory for the Tomcat 7 server installed with NetBeans. If you do not have a Tomcat server, use the button [11],
+  <li>in [10], we specify the installation folder for the Tomcat 7 server installed with Netbeans. If you do not have a Tomcat server, use the button [11],
   </li>
   <li>in [12], the Tomcat server appears in the [Servers] window,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007C00000029E6F87BFF7.png" width="680" height="230" style="display:inline-block; margin:4px;width:17.997cm;height:6.078cm;" class="odt-zoomable" data-zoom-src="images/10000000000007C00000029E6F87BFF7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007C00000029E6F87BFF7.png" width="680" height="230" style="display:inline-block; margin:4px;width:17.997cm;height:6.078cm;" class="odt-zoomable" data-zoom-src="images/10000000000007C00000029E6F87BFF7.png" /></td></tr></table>
 
 <ul>
   <li>in [13], we start the server,
@@ -977,7 +979,7 @@
   </li>
 </ul>
 
-<p>In the [Console] window, you should see the following Tomcat logs if everything is working properly:</p>
+<p>In the [Console] window, we get the following Tomcat logs if everything goes well:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1018,100 +1020,100 @@
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="n">mai</span><span class="w"> </span><span class="mi">26</span><span class="p">,</span><span class="w"> </span><span class="mi">2012</span><span class="w"> </span><span class="mi">8</span><span class="p">:</span><span class="mi">56</span><span class="p">:</span><span class="mi">57</span><span class="w"> </span><span class="n">AM</span><span class="w"> </span><span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">catalina</span><span class="p">.</span><span class="n">startup</span><span class="p">.</span><span class="n">Catalina</span><span class="w"> </span><span class="n">start</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="n">Infos</span><span class="p">:</span><span class="w"> </span><span class="n">Server</span><span class="w"> </span><span class="n">startup</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">2252</span><span class="w"> </span><span class="n">ms</span>
 </code></pre></div></td></tr></table></div>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000072E000001D13083DF14.png" width="680" height="172" style="display:inline-block; margin:4px;width:17.997cm;height:4.553cm;" class="odt-zoomable" data-zoom-src="images/100000000000072E000001D13083DF14.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000072E000001D13083DF14.png" width="680" height="172" style="display:inline-block; margin:4px;width:17.997cm;height:4.553cm;" class="odt-zoomable" data-zoom-src="images/100000000000072E000001D13083DF14.png" /></td></tr></table>
 
 <ul>
-  <li>Still in the [Servers] window, add a new server [16],
+  <li>Still in the [Servers] window, a new server [16] is added,
   </li>
-  <li>in [17], the Glassfish server is not listed,
+  <li>in [17], the Glassfish server is not offered,
   </li>
   <li>in this case, use the link [18],
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007A6000001F3BF2CF4D1.png" width="680" height="173" style="display:inline-block; margin:4px;width:17.997cm;height:4.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000007A6000001F3BF2CF4D1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007A6000001F3BF2CF4D1.png" width="680" height="173" style="display:inline-block; margin:4px;width:17.997cm;height:4.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000007A6000001F3BF2CF4D1.png" /></td></tr></table>
 
 <ul>
-  <li>in [19], choose to add an adapter for the GlassFish server,
+  <li>in [19], we choose to add an adapter for the server Glassfish,
   </li>
-  <li>it is downloaded, and back in the [Servers] window, add a new server,
+  <li>which is downloaded, and back in the [Servers] window, we add a new server,
   </li>
-  <li>this time in [21], the GlassFish servers are listed,
+  <li>this time in [21], the Glassfish servers are suggested,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B3000002BAEC0852D5.png" width="680" height="241" style="display:inline-block; margin:4px;width:17.997cm;height:6.373cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B3000002BAEC0852D5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B3000002BAEC0852D5.png" width="680" height="241" style="display:inline-block; margin:4px;width:17.997cm;height:6.373cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B3000002BAEC0852D5.png" /></td></tr></table>
 
 <ul>
-  <li>in [22], select the GlassFish 3.1.2 server downloaded with NetBeans,
+  <li>in [22], select the Glassfish 3.1.2 server downloaded with Netbeans,
   </li>
-  <li>in [23], specify the GlassFish 3.1.2 installation folder (pay attention to the path indicated in [24]),
+  <li>in [23], specify the installation folder for Glassfish 3.1.2 (pay attention to the path indicated in [24]),
   </li>
-  <li>if you do not have a GlassFish server, use the [25] button,
+  <li>if you do not have a Glassfish server, use the [25] button,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B40000016A98589663.png" width="680" height="125" style="display:inline-block; margin:4px;width:17.997cm;height:3.304cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B40000016A98589663.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B40000016A98589663.png" width="680" height="125" style="display:inline-block; margin:4px;width:17.997cm;height:3.304cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B40000016A98589663.png" /></td></tr></table>
 
 <ul>
-  <li>in [26], the wizard asks for the GlassFish server administrator password. For a first installation, this is normally <i>adminadmin</i>,
+  <li>in [26], the wizard asks for the Glassfish server administrator password. For a first installation, this is normally <i>adminadmin</i>,
   </li>
-  <li>once the wizard is finished, the GlassFish server appears in the [Servers] window [27],
+  <li>when the wizard is finished, in the [Servers] window, the Glassfish server appears [27],
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B90000027830BBA770.png" width="680" height="217" style="display:inline-block; margin:4px;width:17.997cm;height:5.754cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B90000027830BBA770.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B90000027830BBA770.png" width="680" height="217" style="display:inline-block; margin:4px;width:17.997cm;height:5.754cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B90000027830BBA770.png" /></td></tr></table>
 
 <ul>
-  <li>in [28], launch it,
+  <li>in [28], we launch it,
   </li>
-  <li>in [29], a problem may arise. This depends on the information provided during installation. GlassFish requires a JDK (Java Development Kit) and not a JRE (Java Runtime Environment),
+  <li>in [29], a problem may occur. This depends on the information provided during installation. Glassfish requires JDK (Java Development Kit) and not JRE (Java Runtime Environment),
   </li>
-  <li>to access the GlassFish server properties, double-click on it in the [Servers] window,
+  <li>to access the properties of the Glassfish server, double-click on it in the [Servers] window,
   </li>
-  <li>which opens the [20] window; there, follow the [Runtime Environment] link,
+  <li>which opens the [20] window, where you follow the [Runtime Environment] link,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000746000001EDA6246AE7.png" width="680" height="180" style="display:inline-block; margin:4px;width:17.997cm;height:4.764cm;" class="odt-zoomable" data-zoom-src="images/1000000000000746000001EDA6246AE7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000746000001EDA6246AE7.png" width="680" height="180" style="display:inline-block; margin:4px;width:17.997cm;height:4.764cm;" class="odt-zoomable" data-zoom-src="images/1000000000000746000001EDA6246AE7.png" /></td></tr></table>
 
 <ul>
-  <li>in [31], we will replace the default JRE with a JDK. To do this, use the [32] link,
+  <li>in [31], replace the default JRE with a JDK. To do this, use the link [32],
   </li>
   <li>in [33], the JREs installed on the machine,
   </li>
-  <li>in [34], add another one,
+  <li>in [34], we add another one,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000705000001A097CC1980.png" width="680" height="157" style="display:inline-block; margin:4px;width:17.997cm;height:4.166cm;" class="odt-zoomable" data-zoom-src="images/1000000000000705000001A097CC1980.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000705000001A097CC1980.png" width="680" height="157" style="display:inline-block; margin:4px;width:17.997cm;height:4.166cm;" class="odt-zoomable" data-zoom-src="images/1000000000000705000001A097CC1980.png" /></td></tr></table>
 
 <ul>
-  <li>In [35], select [Standard VM] (Virtual Machine),
+  <li>in [35], select [Standard VM] (Virtual Machine),
   </li>
   <li>in [36], select a JDK (&gt;=1.6),
   </li>
-  <li>in [37], enter a name for the new JRE,
+  <li>in [37], the name given to the new JRE,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B600000254AE452154.png" width="680" height="205" style="display:inline-block; margin:4px;width:17.997cm;height:5.435cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B600000254AE452154.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B600000254AE452154.png" width="680" height="205" style="display:inline-block; margin:4px;width:17.997cm;height:5.435cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B600000254AE452154.png" /></td></tr></table>
 
 <ul>
-  <li>Back at the JRE selection screen for GlassFish, select the new JRE specified in [38],
+  <li>After switching from JRE to Glassfish, we select the new JRE, which was previously designated as [38],
   </li>
-  <li>once the configuration wizard is complete, restart [Glassfish] [39],
+  <li>once the configuration wizard is complete, we restart [Glassfish] [39],
   </li>
-  <li>in [40], it launches,
+  <li>to [40], it is launched,
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007BB000001A81F0AF8A3.png" width="680" height="146" style="display:inline-block; margin:4px;width:17.997cm;height:3.856cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BB000001A81F0AF8A3.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007BB000001A81F0AF8A3.png" width="680" height="146" style="display:inline-block; margin:4px;width:17.997cm;height:3.856cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BB000001A81F0AF8A3.png" /></td></tr></table>
 
 <ul>
-  <li>in [41], the server directory tree,
+  <li>in [41], the server directory structure,
   </li>
-  <li>in [42], we access the GlassFish logs:
+  <li>in [42], access the logs for Glassfish:
   </li>
 </ul>
 
@@ -1141,34 +1143,34 @@
 <a id="__codelineno-1-12" name="__codelineno-1-12"></a>
 <a id="__codelineno-1-13" name="__codelineno-1-13"></a>Infos: JMX005: JMXStartupService had Started JMXConnector on JMXService URL service:jmx:rmi://Gportpers3.ad.univ-angers.fr:8686/jndi/rmi://Gportpers3.ad.univ-angers.fr:8686/jmxrmi
 </code></pre></div></td></tr></table></div>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000285000001F32C78F518.png" width="323" height="250" style="display:inline-block; margin:4px;width:8.534cm;height:6.602cm;" class="odt-zoomable" data-zoom-src="images/1000000000000285000001F32C78F518.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000285000001F32C78F518.png" width="323" height="250" style="display:inline-block; margin:4px;width:8.534cm;height:6.602cm;" class="odt-zoomable" data-zoom-src="images/1000000000000285000001F32C78F518.png" /></td></tr></table>
 
 <ul>
-  <li>In [43], we stop the Glassfish server.
+  <li>In [43], we are stopping the Glassfish server.
   </li>
 </ul>
 
-<p><a id="refheading78368566070260"></a>
-<a id="wampserver"></a></p>
-<h3 id="133-installation-of-wampserver">1.3.3. <span style="color: #4f81bd">Installation of [ WampServer]</span></h3>
-<p>[WampServer] is a software suite for developing in PHP/MySQL/Apache on a Windows machine. We will use it solely for the MySQL DBMS.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000079000000289216D1732.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.033cm;" class="odt-zoomable" data-zoom-src="images/100000000000079000000289216D1732.png" /></td></tr></table>
+<p><span id="refheading78368566070260" name="refheading78368566070260" class="odt-bookmark-anchor"></span>
+<span id="wampserver" name="wampserver" class="odt-bookmark-anchor"></span></p>
+<h3 id="133-installation-of-wampserver">1.3.3. <span style="color: #4f81bd">Installation of [WampServer]</span></h3>
+<p>[WampServer] is a software package for developing on PHP / MySQL / Apache on a Windows machine. We will use it only for SGBD MySQL.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000079000000289216D1732.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.033cm;" class="odt-zoomable" data-zoom-src="images/100000000000079000000289216D1732.png" /></td></tr></table>
 
 <ul>
-  <li>On the [WampServer] website [1], choose the appropriate version [2],
+  <li>On the [WampServer] [1] website, select the appropriate version [2],
   </li>
-  <li>the downloaded executable is an installer. Various pieces of information are requested during installation. These do not concern MySQL, so they can be ignored. Window [3] appears at the end of the installation. Launch [WampServer],
+  <li>The downloaded executable is an installer. Various pieces of information are requested during installation. They do not concern MySQL. You can therefore ignore them. The [3] window appears at the end of the installation. Launch [WampServer],
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000035B000002A71AD9FCA1.png" width="430" height="340" style="display:inline-block; margin:4px;width:11.365cm;height:8.983cm;" class="odt-zoomable" data-zoom-src="images/100000000000035B000002A71AD9FCA1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000035B000002A71AD9FCA1.png" width="430" height="340" style="display:inline-block; margin:4px;width:11.365cm;height:8.983cm;" class="odt-zoomable" data-zoom-src="images/100000000000035B000002A71AD9FCA1.png" /></td></tr></table>
 
 <ul>
-  <li>in [4], the [WampServer] icon appears in the taskbar at the bottom right of the screen [4],
+  <li>in [4], the [WampServer] icon is installed in the taskbar at the bottom right of the screen [4],
   </li>
-  <li>when you click on it, the [5] menu appears. It allows you to manage the Apache server and the MySQL DBMS. To manage the latter, use the [PhpMyAdmin] option,
+  <li>and when you click on it, the [5] menu appears. It allows you to manage the Apache server and the SGBD MySQL. To manage the server, use the option [PhpPmyAdmin],
   </li>
-  <li>which opens the window shown below,
+  <li>which brings up the window shown below.
   </li>
 </ul>
 

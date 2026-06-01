@@ -55,6 +55,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -436,14 +438,14 @@
   
   
     <li class="md-nav__item">
-      <a href="example-application-03-rdvmedecins-pf-ejb.html" class="md-nav__link">
+      <a href="sample-application-03-rdvmedecins-pf-ejb.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Example Application-03: rdvmedecins-pf-ejb
+    6. Sample Application-03: rdvmedecins-pf-ejb
   
 
     
@@ -497,7 +499,7 @@
   <span class="md-ellipsis">
     
   
-    8. Introduction to PrimeFaces Mobile
+    8. Introduction to Primefaces Mobile
   
 
     
@@ -618,10 +620,10 @@
 
 
 
-<p><a id="refheading1267571553644564"></a></p>
+<p><span id="refheading1267571553644564" name="refheading1267571553644564" class="odt-bookmark-anchor"></span></p>
 <h1 id="11-conclusion">11. <span style="color: #365f91">Conclusion</span></h1>
-<p><span style="color: #000000">Let’s summarize the work done in this document. We have presented three web frameworks: Java Server Faces, PrimeFaces, and PrimeFaces Mobile, and we have implemented them in six Java EE applications:</span></p>
-<ul>
+<p><span style="color: #000000">Let’s summarize the work covered in this document. We have presented three web frameworks: Java Server Faces, Primefaces, and Primefaces Mobile, and we have implemented them in six Java applications EE:</span></p>
+<ol>
   <li><span style="color: #000000">01: JSF / EJB3 / Glassfish,</span>
   </li>
   <li><span style="color: #000000">02: JSF / Spring / Tomcat,</span>
@@ -634,16 +636,16 @@
   </li>
   <li><span style="color: #000000">06: PFM / Spring / Tomcat.</span>
   </li>
-</ul>
+</ol>
 
-<p><span style="color: #000000">The architecture of the sample application was as follows in an EJB / Glassfish environment:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051800000112409E9AC4.png" width="652" height="137" style="display:inline-block; margin:4px;width:17.251cm;height:3.625cm;" class="odt-zoomable" data-zoom-src="images/100000000000051800000112409E9AC4.png" /></td></tr></table>
+<p><span style="color: #000000">The architecture of the sample application was as follows in a EJB / Glassfish environment:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000051800000112409E9AC4.png" width="652" height="137" style="display:inline-block; margin:4px;width:17.251cm;height:3.625cm;" class="odt-zoomable" data-zoom-src="images/100000000000051800000112409E9AC4.png" /></td></tr></table>
 
-<p><span style="color: #000000">or this one in a Spring/Tomcat environment:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E00000010C56D73A82.png" width="624" height="134" style="display:inline-block; margin:4px;width:16.51cm;height:3.545cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E00000010C56D73A82.png" /></td></tr></table>
+<p><span style="color: #000000">or this one in a Spring / Tomcat environment:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004E00000010C56D73A82.png" width="624" height="134" style="display:inline-block; margin:4px;width:16.51cm;height:3.545cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E00000010C56D73A82.png" /></td></tr></table>
 
-<p><span style="color: #000000">We used a layered architecture starting with the first version. This architecture was carried over into all subsequent versions. Finally, the [web] layer was implemented successively using the Java Server Faces, PrimeFaces, and PrimeFaces Mobile frameworks. It adheres to the MVC (Model-View-Controller) pattern.</span></p>
-<p><span style="color: #000000">It was a long process that could be improved. Upon reviewing it, I realized that some of the choices made were not necessarily the best. I leave it to the reader to make this document their own and then build upon it.</span></p>
+<p><span style="color: #000000">We used a layered architecture starting with the first version. This was carried over to all subsequent versions. Finally, the [web] layer was successively implemented using the Java Server Faces, Primefaces, and Primefaces mobile frameworks. It follows the MVC model (Model-View-Controller).</span></p>
+<p><span style="color: #000000">This was a project that could be improved. Upon review, I discovered that some of the choices made were not necessarily the best. I leave it to the reader to make this document their own and then build upon it.</span></p>
 
 
 
